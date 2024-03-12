@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalorieActivity"
+    android:background="#D6ABAB">
+
+    <TextView
+        android:id="@+id/totalCalorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calorie"
+        android:textSize="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FAE103"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/leftTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="나의 1일 에너지 요구량은   "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalCalorie" />
+
+    <TextView
+        android:id="@+id/totalCalorie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kcal"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/leftTextView"
+        app:layout_constraintTop_toBottomOf="@+id/totalCalorie" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="3대 영양소의 에너지 적정 비율 및 권장 섭취량 알아보기"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftTextView" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="에너지 적정 비율"
+        android:textStyle="bold"
+        android:textColor="#11619F"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/calImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/calorie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview2" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="나의 3대 영양소 권장 섭취량 구해보기"
+        android:textStyle="bold"
+        android:textColor="#11619F"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calImageView" />
+
+    <TextView
+        android:id="@+id/textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="* 탄수화물 1g = 4 kcal, 단백질 1g = 4 kcal, 지방 1g = 9 kcal"
+        android:textStyle="bold"
+        android:textColor="#0509FF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview3" />
+
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="- 섭취 열량 (kcal)"
+        android:textStyle="bold"
+        android:textColor="#AC2323"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview4" />
+
+    <TextView
+        android:id="@+id/tan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="  탄수화물:   "
+        android:textStyle="bold"
+        android:textColor="#EF0606"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview5" />
+
+    <TextView
+        android:id="@+id/tancal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kcal"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tan"
+        app:layout_constraintTop_toBottomOf="@+id/textview5" />
+
+    <TextView
+        android:id="@+id/dan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="  단백질   :   "
+        android:textStyle="bold"
+        android:textColor="#EF0606"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tan" />
+
+    <TextView
+        android:id="@+id/dancal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kcal"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/dan"
+        app:layout_constraintTop_toBottomOf="@+id/tancal" />
+
+    <TextView
+        android:id="@+id/ji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="  지방       :   "
+        android:textStyle="bold"
+        android:textColor="#EF0606"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dan" />
+
+    <TextView
+        android:id="@+id/jical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kcal"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ji"
+        app:layout_constraintTop_toBottomOf="@+id/dancal" />
+
+    <TextView
+        android:id="@+id/textview6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="- 섭취량 (g)"
+        android:textStyle="bold"
+        android:textColor="#4CAC23"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ji" />
+
+
+    <TextView
+        android:id="@+id/tan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="  탄수화물:   "
+        android:textStyle="bold"
+        android:textColor="#0CFD03"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview6" />
+
+    <TextView
+        android:id="@+id/tancal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="g"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tan"
+        app:layout_constraintTop_toBottomOf="@+id/textview6" />
+
+    <TextView
+        android:id="@+id/dan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="  단백질   :   "
+        android:textStyle="bold"
+        android:textColor="#0CFD03"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tan1" />
+
+    <TextView
+        android:id="@+id/dancal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="g"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/dan1"
+        app:layout_constraintTop_toBottomOf="@+id/tancal1" />
+
+    <TextView
+        android:id="@+id/ji1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="  지방       :   "
+        android:textStyle="bold"
+        android:textColor="#0CFD03"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dan1" />
+
+    <TextView
+        android:id="@+id/jical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="g"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ji1"
+        app:layout_constraintTop_toBottomOf="@+id/dancal1" />
+
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음으로"
+        android:textStyle="bold"
+        android:textColor="#0B0B0B"
+        android:backgroundTint="#6617EA33"
+        app:layout_constraintTop_toBottomOf="@+id/jical1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/b_calendar"
+            android:icon="@drawable/ic_calendar_black_24dp"
+            android:title="달력"/>
+
+    <item
+            android:id="@+id/b_graph"
+            android:icon="@drawable/ic_graph_black_24dp"
+            android:title="식단"/>
+
+    <item
+            android:id="@+id/b_setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="설정"/>
+
+</menu>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">식생활도우미</string>
+    <string name="height">신장</string>
+    <string name="weight">체중</string>
+    <string name="title_activity_center">CenterActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+
+    <string name="explain1">하루에 섭취하여야 할 음식의 열량은 각자의 표준 체중과 활동 정도에 따라 다릅니다. 예를 들면 운동선수나 심한 노동일을 하는 경우,  하루 종일 의자에 앉아 사무를 보는 경우보다 더 많은 열량을 섭취하여야 하는 것은 당연합니다. 하루 총 필요 열량을 계산하는 방법은 다음과 같습니다.</string>
+    <string name="explain">예를 들어 평균체중이 60kg인 정상 남자가 가벼운 활동을 한다면   하루 필요 열량은 60 X 30 = 1800kcal입니다.</string>
+    <string name="explains">하루 총열량을 구하기위해서는 활동 정도를 알아야합니다. 활동 정도란 하루에 어느정도의 일을 하느냐에따라 다릅니다. 당신이 평균체중인 경우 가벼운 활동은 30이고 보통 활동은 35이며 힘든 활동은  40이라 말씀하시면 됩니다. 저체중인 경우 평균보다 +5를 한 값을 말해야하며 과체중이나 비만인 경우 -5한 값을 말씀하셔야합니다. 화면 위쪽을 두번 클릭 후 말씀해주세요.</string>
+    <string name="explainHelp">- 이 앱은 성인 기준으로 작성되었습니다. 어린이나 청소년의 성장 정도, 임신부의 경우 총 열량 요구량이 증가하므로 이 앱 기준과 맞지 않을 수 있습니다.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ptmessage">안녕하세요. 시각장애인을 위한 식생활 도우미입니다. 화면아래를 두번 클릭시 신장과 체중을 입력 가능한 화면으로 넘어가고 롱 클릭시 앱을 처음부터 끝까지 어떻게 사용하는지 들으실 수 있는 화면으로 넘어갑니다. </string>
+    <string name="helpmessage"> 이 앱은 성인 기준으로 작성되었습니다. 어린이나 청소년의 성장 정도, 임신부의 경우 총 열량 요구량이 증가하므로 이 앱 기준과 맞지 않을 수 있습니다. 앱 사용법 1. 화면을 두번 클릭 후 음성으로 자신의 신장과 체중을 말합니다. 2. bmi를 듣고 다음화면으로 넘어갑니다 3. 자신의 활동량을 말합니다. 4. 자신이 먹어야할 하루 총칼로리를 듣습니다. 5. 달력을 사용해 자신이 먹은 음식을 기록할 수 있습니다.    </string>
+</resources>

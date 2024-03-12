@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity"
+    android:background="#D6ABAB">
+
+  <TextView
+      android:id="@+id/heighttv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#6CD52A"
+      android:text="@string/height"
+      android:textColor="@color/black"
+      android:textSize="30dp"
+      android:gravity="center"
+      android:layout_margin="20dp"
+      android:textStyle="bold"/>
+
+  <EditText
+      android:id="@+id/cmet"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="cm"
+      android:textColor="@color/black"
+      android:gravity="right"
+      android:textSize="30dp"
+      android:layout_margin="20dp" />
+
+  <TextView
+      android:id="@+id/weighttv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#6CD52A"
+      android:text="@string/weight"
+      android:textColor="@color/black"
+      android:textSize="30dp"
+      android:gravity="center"
+      android:layout_margin="20dp"
+      android:textStyle="bold"/>
+
+  <EditText
+      android:id="@+id/kget"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="kg"
+      android:textColor="@color/black"
+      android:gravity="right"
+      android:textSize="30dp"
+      android:layout_margin="20dp"/>
+
+  <Button
+      android:id="@+id/calculateButton"
+      android:layout_width="300dp"
+      android:layout_height="50dp"
+      android:layout_gravity="center"
+      android:text="계산하기"
+      android:backgroundTint="#4BFFBF00"
+      android:textColor="@color/black"
+      android:layout_margin="70dp"/>
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

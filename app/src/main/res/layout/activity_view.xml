@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/background0">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/suwon"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작하기"
+        android:textSize="30dp"
+        android:backgroundTint="#47BA25"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:id="@+id/help_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#35A679"
+        android:text="도움말"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

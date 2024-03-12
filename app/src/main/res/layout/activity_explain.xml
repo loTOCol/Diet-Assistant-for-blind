@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6ABAB"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/my_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bmi" />
+
+    <TextView
+        android:id="@+id/my_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_image_view"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/explain1" />
+
+    <TextView
+        android:id="@+id/my_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_text_view"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/explain" />
+
+    <TextView
+            android:id="@+id/my_text_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_text_view2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text="당신의  평균 체중은"/>
+
+    <TextView
+        android:id="@+id/avgkgtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/my_text_view3"
+        android:layout_alignBottom="@id/my_text_view3"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:text="KG" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/avgkgtextview"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radio_button25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="35"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/selected_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_centerHorizontal="true"
+        android:text="당신의 활동 정도를 선택하세요!"
+        android:textStyle="bold"
+        android:textColor="#FA0404"
+        android:textSize="20sp" />
+
+
+
+
+</RelativeLayout>

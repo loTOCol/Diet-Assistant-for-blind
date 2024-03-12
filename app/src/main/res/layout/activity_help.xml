@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#D6ABAB"
+tools:context=".HelpActivity"
+android:orientation="vertical">
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:textSize="19sp"
+    android:text="@string/explainHelp"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:textColor="@color/black"
+    android:text="앱 사용법"/>
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:textStyle="bold|italic"
+    android:text="1. 시작하기를 누른 후 자신의 신장과 체중을 작성한다."/>
+
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:textStyle="bold|italic"
+    android:text="2. BMI를 확인한다. "/>
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:textStyle="bold|italic"
+    android:text="3. 자신의 활동량을 표에서 확인 후 선택한다."/>
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:textStyle="bold|italic"
+    android:text="4. 나의 3대 영양소 권장 섭취량을 알아본다"/>
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:textStyle="bold|italic"
+    android:text="5. 하루동안 먹은 음식을 기록한다."/>
+
+
+    <RatingBar
+        android:layout_marginTop="50dp"
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="5"
+        android:layout_gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right">
+        <Button
+            android:id="@+id/beforebutton"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textStyle="bold"
+            android:text="돌아가기"
+            android:textColor="@color/black"
+            android:backgroundTint="#6617EA33"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
